@@ -54,3 +54,17 @@ body{
 
 }
 
+#headerlogo{
+	height:150px;
+	margin: 20px 0 50px 30px;
+
+}
+
+#headertext{
+	color:#B7A86A;
+	font-family: 'Cookie', sans-serif;
+	text-align: center;
+	font-size: 20px;
+
+
+}

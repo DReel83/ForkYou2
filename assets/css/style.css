@@ -4,7 +4,7 @@ body{
 
 
 #mainlogo{
-	height: 310px;
+	height: 270px;
 	padding-left: 15%;
 	
 
@@ -24,6 +24,7 @@ body{
 
 #foodpic{
 	height:450px;
+
 }
 
 
@@ -35,12 +36,21 @@ body{
 }
 
 #main{
-	margin-top: 100px;
+	margin-top: 70px;
 }
 
 .welcome{
 	color:#B7A86A;
 	font-family: 'Cookie', sans-serif;
 	text-align: center;
+	font-size: 4em;
 
 }
+
+#startAdventure{
+	margin-left: 45%;
+	margin-top: 30px;
+	font-family: 'Mukta Vaani',sans-serif;
+
+}
+

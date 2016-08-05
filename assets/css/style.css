@@ -4,10 +4,19 @@ body{
 
 
 #mainlogo{
-	height: 300px;
-	padding-left: 5%;
+	height: 310px;
+	padding-left: 15%;
+	
 
 }
+
+#mainlogosm{
+	height: 200px;
+	padding-left: 10%;
+
+
+}
+
 
 .jumbotron{
 	background-color: black;
@@ -15,4 +24,23 @@ body{
 
 #foodpic{
 	height:450px;
+}
+
+
+.maintext{
+	color:#B7A86A;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+
+}
+
+#main{
+	margin-top: 100px;
+}
+
+.welcome{
+	color:#B7A86A;
+	font-family: 'Cookie', sans-serif;
+	text-align: center;
+
 }

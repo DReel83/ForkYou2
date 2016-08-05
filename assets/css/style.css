@@ -4,9 +4,15 @@ body{
 
 
 #mainlogo{
-	height: 200px;
+	height: 300px;
+	padding-left: 5%;
+
 }
 
 .jumbotron{
 	background-color: black;
+}
+
+#foodpic{
+	height:450px;
 }

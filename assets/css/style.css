@@ -3,6 +3,7 @@ body{
 }
 
 
+
 #mainlogo{
 	height: 270px;
 	padding-left: 15%;
@@ -22,6 +23,12 @@ body{
 	background-color: black;
 }
 
+.maintext2{
+	color:#B7A86A;
+	font-family: 'Poppins', sans-serif;
+
+
+}
 
 
 .maintext{
@@ -44,15 +51,17 @@ body{
 }
 
 #startAdventure{
-	margin-left: 45%;
+	margin-left: 40%;
 	margin-top: 30px;
 	font-family: 'Mukta Vaani',sans-serif;
 
 }
 
+
 #headerlogo{
-	height:150px;
-	margin: 20px 0 50px 30px;
+	height:250px;
+	margin-left:40%;
+
 
 }
 
@@ -63,4 +72,180 @@ body{
 	font-size: 20px;
 
 
+}
+
+#sugarFood{
+	background-color: #ffeea9;
+	padding: 15px 0 10px 0;
+	border-radius:20px;
+
+}
+
+#chocolate,
+#cookie,
+#sugar,
+#oliveOil,
+#iceCream{
+	height:80px;
+	width: auto;
+	margin-left: 60px;
+
+
+	
+}
+
+
+#sugarFood img:hover{
+ 	opacity: 0.2;
+}
+
+
+#milkAndDairy{
+	background-color: #a9b7ff;
+	margin-top: 20px;
+	padding: 15px 0 10px 0;
+	border-radius:20px;
+}
+
+#butter,
+#yogurt,
+#cheese,
+#milk,
+#soyMilk{
+	height:80px;
+	width: auto;
+	margin-left: 70px;
+
+}
+
+#milkAndDairy img:hover{
+ 	opacity: 0.2;
+}
+
+
+#meatAndFish{
+	background-color: #ffa9a9;
+	margin-top: 20px;
+	padding: 15px 0 10px 0;
+	border-radius:20px;
+}
+
+#bacon,
+#eggs,
+#rawChicken,
+#salmon,
+#shrimp{
+	height:80px;
+	width: auto;
+	margin-left: 40px;
+
+}
+
+#meatAndFish img:hover{
+ 	opacity: 0.2;
+}
+
+#fruits{
+	background-color: #a9ffaa;
+	margin-top: 20px;
+	padding: 15px 0 10px 0;
+	border-radius:20px;
+}
+
+#apple,
+#banana,
+#lemon,
+#pineapple,
+#strawberry{
+	height:80px;
+	width: auto;
+	margin-left: 60px;
+
+}
+
+#fruits img:hover{
+ 	opacity: 0.2;
+}
+
+.title{
+	color:#B7A86A;
+	font-family: 'Cookie', sans-serif;
+	font-size: 80px;
+	text-align: center;
+	bottom:30px;
+
+
+}
+
+#header{
+	padding-top: 20px;
+	height: 150px;
+	background-color: black;
+
+
+}
+
+#vegetables{
+	background-color: #ffbf7e;
+	margin-top: 20px;
+	padding: 15px 0 10px 0;
+	border-radius:20px;
+}
+
+#broccoli,
+#carrots,
+#lettuce,
+#peppers,
+#tomato{
+	height:80px;
+	width: auto;
+	margin-left: 60px;
+
+}
+
+#vegetables img:hover{
+ 	opacity: 0.2;
+}
+
+#cereals{
+	background-color: #ea9aff;
+	margin-top: 20px;
+	padding: 15px 0 10px 0;
+	border-radius:20px;
+}
+
+#bread,
+#corn,
+#potato,
+#rice,
+#spaghetti{
+	height:80px;
+	width: auto;
+	margin-left: 60px;
+
+}
+
+#cereals img:hover{
+ 	opacity: 0.2;
+}
+
+#recipeButton,
+#restaurantButton{
+
+	margin-top: 30px;
+	font-family: 'Mukta Vaani',sans-serif;
+
+}
+
+#footer{
+	background-color: #B7A86A;
+	height: 50px;
+	margin-top: 30px;
+}
+
+#addItems{
+	background-color: white;
+	opacity: 0.9;
+	border:solid #B7A86A 3px;
+	margin-top: 20px;
 }

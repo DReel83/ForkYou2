@@ -945,6 +945,14 @@ body{
 
 }
 
+.fooditems{
+    margin: 5px 3px 5px 3px;
+    padding: 8px 15px 8px 15px;
+    border: solid 2px #B7A86A ;
+    border-radius:5px;
+    font-family: 'Poppins', sans-serif;
+}
+
 #header{
 	padding-top: 20px;
 	height: 150px;
@@ -1031,5 +1039,3 @@ body{
 
 
 }
-
-	}

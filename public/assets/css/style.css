@@ -269,6 +269,8 @@ body{
 
 @media screen and (max-width: 980px) {
 
+
+
 #startAdventure{
 	position:relative;
 	bottom:390px;
@@ -492,10 +494,10 @@ body{
 
 }
 #search{
-	margin-left:190px;
+	margin-left:60px;
 	font-family: 'Mukta Vaani',sans-serif;
 	position:relative;
-	bottom:77px;
+	bottom:0px;
 
 }
 
@@ -746,10 +748,10 @@ body{
 
 }
 #search{
-	margin-left:190px;
+	margin-left:63px;
 	font-family: 'Mukta Vaani',sans-serif;
 	position:relative;
-	bottom:75px;
+	bottom:10px;
 
 }
 
@@ -1005,16 +1007,12 @@ body{
  	opacity: 0.2;
 }
 
-#search{
-	margin-left:65px;
-	font-family: 'Mukta Vaani',sans-serif;
 
-}
 #search{
-	margin-left:190px;
+	margin-left:63px;
 	font-family: 'Mukta Vaani',sans-serif;
 	position:relative;
-	bottom:75px;
+	bottom:10px;
 
 }
 

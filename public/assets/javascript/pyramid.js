@@ -2,7 +2,7 @@ $( document ).ready(function() {
 
   $('#addItems').css('height', 200)
 
-//Add ingredients when clicking on Image//
+//Add ingredients when clicking on Image
 var addItemCount = 0;
 
   function addtocart(ingredient) {
@@ -12,29 +12,29 @@ var addItemCount = 0;
 
     console.log(value)
 
-    // Create a new todo <p> tag in jquery  to hold a todoitem and give it a unique identifier based on what number it is in the list. 
+    // Create a new item <p> tag in jquery
       var itemContainer =$("<div>")
       var item =$("<p>")
       
-    // Then give it an ID of the form: "item-4" or "item-3" or "item-99", where the number is equal to toDoCount.
+    // Then give it an ID of the form: "item-4" or "item-3" or "item-99", where the number is equal to addItemCount.
 
       item.attr("id", "item-" + addItemCount)
       itemContainer.attr("id", "cont-" + addItemCount)
 
-    // Then append the todo text to this <p> element.
+    // Then append the item text to this <p> element.
 
       item.append(value)
       console.log(item)
     // Create a button with unique identifers based on what number it is in the list. Again use jquery to do this.
       var button =$("<button>")
-    // Give your button a data attribute called data-todo and a class called "checkbox".
+    // Give your button a data attribute called data-item and a class called "checkbox".
       button.attr("data-item", addItemCount)
     // Lastly append a letter X inside.  
       button.addClass('checkbox')
       button.append('x')
 
 
-    // Append the button to the add item
+    // Append the button to the add itemContainer
       itemContainer.append(item, button)
 
 
@@ -51,7 +51,7 @@ var addItemCount = 0;
 
       t.css('float', 'left');
 
-    // Add to the todoCount
+    // Add to the addItemCount
       addItemCount++
 
     // Prevent Form from Refreshing (return false)
@@ -62,9 +62,11 @@ var addItemCount = 0;
 //Displays text
   $("#addItem").on("click", function(){
 
-    // Get the Todo "value" from the textbox
+    // Get the item "value" from the textbox
     value = $('#item').val().trim();
     addtocart(value);
+  
+    // return false;
     return false;
 
   });
@@ -75,8 +77,6 @@ var addItemCount = 0;
     addtocart(imgValue);
   });
 
-  
-  // return false;
 
 // When a user clicks a check box then delete the specific content
   $(document.body).on('click', '.checkbox', function(){
@@ -88,6 +88,28 @@ var addItemCount = 0;
           $('#cont-'+itemNumber).remove();
   });
   return false;
+
+
+//Api to fork to food
+function displayRecipe()
+  {
+
+    $('#recipeAppearHere').empty();
+        var recipe = $(this).data('name');
+        console.log(recipe);
+        var queryURL = "http://food2fork.com/api/get?key=c3efaeda1af2d39309095a618614e527&q=";
+        console.log(queryURL);
+        $.ajax(
+        {
+                url: queryURL,
+                method: 'GET'
+        })
+            .done(function(response) 
+            {
+
+                console.log(response)
+            })
+    };
 
 });
 

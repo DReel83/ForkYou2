@@ -241,7 +241,7 @@ body{
 }
 
 #recipeButton,
-#restaurantButton{
+#search{
 
 	margin-top: 30px;
 	font-family: 'Mukta Vaani',sans-serif;
@@ -485,7 +485,7 @@ body{
 	font-family: 'Mukta Vaani',sans-serif;
 
 }
-#restaurantButton{
+#search{
 	margin-left:190px;
 	font-family: 'Mukta Vaani',sans-serif;
 	position:relative;
@@ -739,7 +739,7 @@ body{
 	font-family: 'Mukta Vaani',sans-serif;
 
 }
-#restaurantButton{
+#search{
 	margin-left:190px;
 	font-family: 'Mukta Vaani',sans-serif;
 	position:relative;
@@ -939,6 +939,14 @@ body{
 
 }
 
+.fooditems{
+    margin: 5px 3px 5px 3px;
+    padding: 8px 15px 8px 15px;
+    border: solid 2px #B7A86A ;
+    border-radius:5px;
+    font-family: 'Poppins', sans-serif;
+}
+
 #header{
 	padding-top: 20px;
 	height: 150px;
@@ -991,12 +999,12 @@ body{
  	opacity: 0.2;
 }
 
-#recipeButton{
+#search{
 	margin-left:65px;
 	font-family: 'Mukta Vaani',sans-serif;
 
 }
-#restaurantButton{
+#search{
 	margin-left:190px;
 	font-family: 'Mukta Vaani',sans-serif;
 	position:relative;
@@ -1025,5 +1033,3 @@ body{
 
 
 }
-
-	}

@@ -5,6 +5,7 @@ $( "#search" ).change(function() {
   // Check input( $( this ).val() ) for validity here
 
     var value = $("#search").val();
+    console.log(value)
 
     queryURL = queryURL + value;
 

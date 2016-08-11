@@ -57,3 +57,69 @@ $.ajax({
 }).fail(function(jqXHR, textStatus, errorThrown) {
     console.log('error[' + errorThrown + '], status[' + textStatus + '], jqXHR[' + JSON.stringify(jqXHR) + ']');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var form = new FormData();
+// form.append("term", "steak");
+// form.append("oauth_consumer_key", "89KTplD2sUHcoma0V_c3hw");
+// form.append("oauth_token", "oR_aeSeGZVVnX-1ifSO9qpkj12ENC3fs");
+// form.append("oauth_signature_method", "HMAC-SHA1");
+// form.append("oauth_timestamp", 1470503186);
+// form.append("oauth_nonce", "xmNEmI");
+// form.append("oauth_version", "1.0");
+// form.append("oauth_signature", "uWVz5m3PeoXy1ABXJ4FG/f5Jceo=");
+
+// var settings = {
+//   "async": true,
+//   "crossDomain": true,
+//   "url": "https://api.yelp.com/v2/search/?term=steak&location=32714&oauth_consumer_key=89KTplD2sUHcoma0V_c3hw&oauth_token=ztIM2TP0ptyQt_l-FgpmmIclTc5jN3Tf&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1470871600&oauth_nonce=WOSn79&oauth_version=1.0&oauth_signature=ocKfwjxoiJvJd5nMIucUbxm0jFQ%3D",
+//   "method": "GET",
+//   "headers": {
+//     "cache-control": "no-cache",
+//     "postman-token": "b3679692-bb0c-ec96-6a7f-5f6dc103555f"
+//   },
+//   "processData": false,
+//   "contentType": false,
+//   "mimeType": "multipart/form-data",
+//   "data": form
+// }
+
+// $.ajax(settings).done(function (response) {
+//   console.log(response);
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

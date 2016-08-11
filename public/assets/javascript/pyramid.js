@@ -90,26 +90,56 @@ var addItemCount = 0;
   return false;
 
 
+
 //Api to fork to food
-function displayRecipe()
-  {
+// function displayRecipe()
+//   {
 
-    $('#recipeAppearHere').empty();
-        var recipe = $(this).data('name');
-        console.log(recipe);
-        var queryURL = "http://food2fork.com/api/get?key=c3efaeda1af2d39309095a618614e527&q=";
-        console.log(queryURL);
-        $.ajax(
-        {
-                url: queryURL,
-                method: 'GET'
-        })
-            .done(function(response) 
-            {
+//     $('#recipeAppearHere').empty();
+//         var recipe = $(this).data('name');
+//         console.log(recipe);
+//         var queryURL = "http://food2fork.com/api/get?key=c3efaeda1af2d39309095a618614e527&q=";
+//         console.log(queryURL);
+//         $.ajax(
+//         {
+//                 url: queryURL,
+//                 method: 'GET'
+//         })
+//             .done(function(response) 
+//             {
 
-                console.log(response)
-            })
-    };
+//                 console.log(response)
+//             })
+//     };
+// var queryURL = "http://food2fork.com/api/search?key=c3efaeda1af2d39309095a618614e527&q=";
+
+
+// $( "#search" ).change(function() {
+//   // Check input( $( this ).val() ) for validity here
+
+//     var value = $("#search").val();
+
+//     queryURL = queryURL + value;
+
+//     console.log(queryURL);
+
+//     $.ajax({
+//         url: queryURL,
+//          dataType: "json",
+//         context: document.body
+//     }).done(function( data ) {
+//         displaydata(data);
+//     })
+// });
+
+
+// //this is where we're going to display the list to the user
+// function displaydata(x){
+//     console.log(x);
+//     var t = JSON.stringify(x);
+
+//     $("#recipeAppearHere").html(t);
+// }
 
 });
 

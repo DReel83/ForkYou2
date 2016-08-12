@@ -13,7 +13,6 @@ function displayRecipe()
         })
             .done(function(response) 
             {
-
                 console.log(response)
             })
     };

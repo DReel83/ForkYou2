@@ -1,23 +1,23 @@
 var queryURL = "http://food2fork.com/api/search?key=c3efaeda1af2d39309095a618614e527&q=";
 
 
-$( "#search" ).change(function() {
+$( "#recipesearch" ).change(function() {
   // Check input( $( this ).val() ) for validity here
+  var value = $("#recipesearch").val();
+  console.log(value);
 
-    var value = $("#search").val();
-    console.log(value)
-
-    queryURL = queryURL + value;
-
-    console.log(queryURL);
-
-    $.ajax({
-        url: queryURL,
-         dataType: "json",
-        context: document.body
-    }).done(function( data ) {
-        displaydata(data);
+  $.ajax({
+      url: queryURL+value,
+      type: 'GET',
+headers: {"Content-Type":"text/plain; charset=utf-8", "Accept": "*", "Accept-Language":"es-ES,es;q=0.8"},
+      contentType: 'application/json',
+      crossDomain: true,
+      dataType: 'json',
+}).done(function(response) 
+    {
+     console.log(response);
     })
+  
 });
 
 

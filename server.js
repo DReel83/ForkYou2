@@ -1,10 +1,17 @@
-var express = require('express');
-var app = express();
-var path = require('path');
-// set the port of our application
-// process.env.PORT lets the port be set by Heroku
-var port = process.env.PORT || 8080;
-app.use(express.static(path.join(__dirname, 'public')));
-app.listen(port, function() {
-   console.log('Our app is running on http://localhost:' + port);
+var express = require('express'),
+  app = express(),
+  http = require('http'),
+  httpServer = http.Server(app);
+
+app.use(express.static(__dirname + '/public'));
+
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  next();      
+}); 
+
+app.get('/', function(req, res) {
+  res.sendfile(__dirname + '/index.html');
 });
+app.listen(3000);

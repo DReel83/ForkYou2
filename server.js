@@ -3,15 +3,17 @@ var express = require('express'),
   http = require('http'),
   httpServer = http.Server(app);
 
+
+var port = process.env.PORT || 8080;
+
 app.use(express.static(__dirname + '/public'));
 
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "X-Requested-With");
-  next();      
-}); 
-
+// set the home page route
 app.get('/', function(req, res) {
-  res.sendfile(__dirname + '/index.html');
+   // ejs render automatically looks in the views folder
+   res.sendFile(path.join(__dirname+'/index.html'));
 });
-app.listen(3000);
+
+app.listen(port, function() {
+   console.log('Our app is running on http://localhost:' + port);
+});

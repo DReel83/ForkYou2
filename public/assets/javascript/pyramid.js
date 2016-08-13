@@ -17,9 +17,10 @@ var addItemCount = 0;
       var item =$("<p>")
       
     // Then give it an ID of the form: "item-4" or "item-3" or "item-99", where the number is equal to addItemCount.
-
+      item.addClass('pItems')
       item.attr("id", "item-" + addItemCount)
       itemContainer.attr("id", "cont-" + addItemCount)
+      itemContainer.addClass('fooditems');
 
     // Then append the item text to this <p> element.
 
@@ -31,11 +32,12 @@ var addItemCount = 0;
       button.attr("data-item", addItemCount)
     // Lastly append a letter X inside.  
       button.addClass('checkbox')
+      button.addClass('chkDiv');
       button.append('x')
 
 
     // Append the button to the add itemContainer
-      itemContainer.append(item, button)
+      itemContainer.prepend(button, item)
 
 
     // Add the button and item to the add div
@@ -89,58 +91,4 @@ var addItemCount = 0;
   });
   return false;
 
-
-
-//Api to fork to food
-// function displayRecipe()
-//   {
-
-//     $('#recipeAppearHere').empty();
-//         var recipe = $(this).data('name');
-//         console.log(recipe);
-//         var queryURL = "http://food2fork.com/api/get?key=c3efaeda1af2d39309095a618614e527&q=";
-//         console.log(queryURL);
-//         $.ajax(
-//         {
-//                 url: queryURL,
-//                 method: 'GET'
-//         })
-//             .done(function(response) 
-//             {
-
-//                 console.log(response)
-//             })
-//     };
-// var queryURL = "http://food2fork.com/api/search?key=c3efaeda1af2d39309095a618614e527&q=";
-
-
-// $( "#search" ).change(function() {
-//   // Check input( $( this ).val() ) for validity here
-
-//     var value = $("#search").val();
-//     console.log(value)
-
-//     queryURL = queryURL + value;
-
-//     console.log(queryURL);
-
-//     $.ajax({
-//         url: queryURL,
-//          dataType: "json",
-//         context: document.body
-//     }).done(function( data ) {
-//         displaydata(data);
-//     })
-// });
-
-
-// //this is where we're going to display the list to the user
-// function displaydata(x){
-//     console.log(x);
-//     var t = JSON.stringify(x);
-
-//     $("#recipeAppearHere").html(t);
-// }
-
 });
-

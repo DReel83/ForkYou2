@@ -34,7 +34,7 @@
 
 				<h1 class="title">Food Pyramid</h1>
 
-				<p class="maintext2">Please choose one or multiple ingredients that you would like to include in your meal. If your ingredient is not displayed, you can type in the box provided below and add it on the search. Enjoy this new adventure, learning how to cook your new favorites or discovering new awesome places.</p>
+				<p class="maintext2">Please select one or multiple ingredients that you would like to include in your meal. If your ingredient is not displayed, you can add items in the search box below. Enjoy this new adventure by learning how to cook your new favorites or discovering new awesome places.</p>
 
 					</div>
 			</div>
@@ -133,10 +133,16 @@
 					</div>	
 
 </div>
-				<br>
-				<form
-				  <h2>Add Ingredient: <input type="text" id="item"><input type="submit" value="Add Item" id="addItem"></h2>
-				</form>
+
+			<div class="row">
+				<div class="col-md-2"></div>
+
+				<div class="col-md-8">
+					<form>
+				  		<h4 id="addIngredient">Add Ingredient: <input type="text" id="item"><input type="submit" value="Add Item" id="addItem"></h4>
+					</form>
+				</div>
+			</div>		
 				<!--add items Div-->
 				<div class="row">
 				<div class="col-md-2"></div>
@@ -153,15 +159,47 @@
 			
 				<!--button search-->
 				<div class ='col-md-1'>
-					<input class="btn btn-default btn-lg" type="submit" value="Search" id="search">
-				</div>
+					
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="searchButton">Search</button>
 
-			<input id="recipesearch" type="text" name="recipe">
+  <input id="recipesearch" type="text" name="recipe">
 			
 			<div id="recipeAppearHere"></div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="maintext2">Recipes & Restaurants</h3>
+        </div>
+        <div class="modal-body" id="results"><h1 class="R"> Results Coming Soon</h1>
+        <h1 class ="R">Version 2.8!!! :) </h1>
+        <div style="text-align: center;"><img src="assets/images/grumpy.jpg" height="400" width="400"></div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 				</div>
+
+			<!-- <input id="search" type="text" name="recipe">
+
+			<div id="recipeAppearHere"></div> -->
+
+				</div>
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				
+				<div class="col-md-8" id="results"></div>	
 		<!--footer-->
 		<div class="container-fluid">
 			<div class="row" id="footer">
@@ -178,8 +216,7 @@
 	<!--access jquery library-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<!--access the local javascript file-->
-
-
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="assets/javascript/main.js"></script>
 	<script src="assets/javascript/fork-to-food-api.js"></script>
 	<script src="assets/javascript/pyramid.js"></script>

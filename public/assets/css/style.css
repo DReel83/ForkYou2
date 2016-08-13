@@ -2,12 +2,24 @@ body{
 	background-color: black;
 }
 
+#searchButton{
+	margin:20px 0 20px -18px;
+	font-family: 'Mukta Vaani',sans-serif;
+	background-color: #B7A86A;
+	font-color: black;
+	border-color:white;}
+
+#searchButton button:hover{
+	background-color: white;
+}	
+	
 
 .fooditems{
 	margin: 5px 3px 5px 3px;
 	padding: 8px 15px 8px 15px;
 	border: solid 2px #B7A86A;
 	border-radius:5px;
+	font-weight: bolder;
 	font-family: 'Poppins', sans-serif;
 }
 #mainlogo{
@@ -17,6 +29,10 @@ body{
 
 }
 
+.chkDiv{
+	float:left;
+}
+
 #mainlogosm{
 	height: 200px;
 	padding-left: 10%;
@@ -24,7 +40,11 @@ body{
 
 }
 
+.R{
+	font-size: 80px;
+	text-align: center;
 
+}
 .jumbotron{
 	background-color: black;
 }
@@ -32,6 +52,18 @@ body{
 .maintext2{
 	color:#B7A86A;
 	font-family: 'Poppins', sans-serif;
+}
+
+#addIngredient{
+	color:#B7A86A;
+	font-family: 'Poppins', sans-serif;
+
+
+}
+
+#addItem{
+	border-radius:3px;
+	margin-left: 10px;
 
 
 }
@@ -183,6 +215,12 @@ body{
 
 }
 
+.pItems {
+	margin: 5px 0 10px 0;
+	padding: 10px;
+	float: left;
+}
+
 .titleRestaurant{
 	color:#B7A86A;
 	font-family: 'Cookie', sans-serif;
@@ -197,7 +235,7 @@ body{
 #header{
 	padding-top: 20px;
 	height: 150px;
-	background-color: black;
+	background-image: url("5.jpg")
 
 
 }
@@ -246,13 +284,7 @@ body{
  	opacity: 0.2;
 }
 
-#recipeButton,
-#search{
 
-	margin-top: 30px;
-	font-family: 'Mukta Vaani',sans-serif;
-
-}
 
 #footer{
 	background-color: #B7A86A;
@@ -268,6 +300,14 @@ body{
 }
 
 @media screen and (max-width: 980px) {
+
+#addIngredient{
+	color:#B7A86A;
+	font-family: 'Poppins', sans-serif;
+	margin-left: 65px;
+
+
+}	
 
 
 
@@ -493,7 +533,7 @@ body{
 	font-family: 'Mukta Vaani',sans-serif;
 
 }
-#search{
+#searchButton{
 	margin-left:60px;
 	font-family: 'Mukta Vaani',sans-serif;
 	position:relative;
@@ -744,7 +784,7 @@ body{
 	font-family: 'Mukta Vaani',sans-serif;
 
 }
-#search{
+#searchButton{
 	margin-left:63px;
 	font-family: 'Mukta Vaani',sans-serif;
 	position:relative;
@@ -777,6 +817,14 @@ body{
 
 
 @media screen and (max-width: 640px){
+
+#addIngredient{
+	color:#B7A86A;
+	font-family: 'Poppins', sans-serif;
+	margin-top: 20px;
+
+
+}	
 
 #startAdventure{
 	font-family: 'Mukta Vaani',sans-serif;
@@ -945,11 +993,11 @@ body{
 }
 
 .fooditems{
-    margin: 5px 3px 5px 3px;
-    padding: 8px 15px 8px 15px;
-    border: solid 2px #B7A86A ;
-    border-radius:5px;
-    font-family: 'Poppins', sans-serif;
+    margin: 5px 3px 5px 3px;
+    padding: 8px 15px 8px 15px;
+    border: solid 2px #B7A86A ;
+    border-radius:5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #header{
@@ -1005,7 +1053,7 @@ body{
 }
 
 
-#search{
+#searchButton{
 	margin-left:63px;
 	font-family: 'Mukta Vaani',sans-serif;
 	position:relative;
@@ -1034,4 +1082,3 @@ body{
 
 
 }
-
